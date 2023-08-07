@@ -2,64 +2,52 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
     padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+/* Style for the "Crick 11" heading */
+.page-heading {
+    text-align: center;
+    margin-top: -500px;
+    margin-bottom: -100px;
+    margin-right: -205px; /* Add some top margin to push it down */
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 30px;
-    color: #007BFF;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
+label {
+    display: block;
+    margin-bottom: 5px;
 }
 
-.grid-item {
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 4px;
-    transition: transform 0.3s ease;
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    
 }
 
-.grid-item:hover {
-    transform: scale(1.05);
-}
-
-img {
-    max-width: 80px;
-    max-height: 80px;
-    border-radius: 50%;
-    border: 2px solid #007BFF;
-}
-
-.player-name {
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 10px;
-    color: #333;
-}
-
-.player-price {
-    font-size: 14px;
-    color: #888;
-    margin-top: 5px;
-}
-
-.buy-btn {
-    background-color: #007BFF;
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 8px 12px;
+    border-radius: 3px;
     cursor: pointer;
-    border-radius: 4px;
-    margin-top: 10px;
-}
-
-.buy-btn:hover {
-    background-color: #0056b3;
 }

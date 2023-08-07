@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007BFF;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-item {
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.grid-item.selected {
+    background-color: #0373033e; /* Grey background */
+}
+  
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+img {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+    border: 2px solid #007BFF;
+}
+
+.player-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.player-price {
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.buy-btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.buy-btn:hover {
+    background-color: #0056b3;
+}
+
+#confirm-team {
+    display: block;
+    margin: 20px auto;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  #play-game {
+    display: block;
+    margin: 20px auto;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
